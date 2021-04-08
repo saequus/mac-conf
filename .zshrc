@@ -32,8 +32,6 @@ plugins=(git ruby)
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 source $ZSH/oh-my-zsh.sh
 
-# GAVIN CUSTOM
-
 # HOMEBREW
 export HOMEBREW_NO_ANALYTICS=1
 
