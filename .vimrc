@@ -25,6 +25,11 @@ Plug 'will133/vim-dirdiff'
 " Githistory highlighting
 Plug 'tpope/vim-fugitive'
 
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+Plug 'sudormrfbin/cheatsheet.nvim'
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+
 Plug 'ryanoasis/vim-devicons'
 
 " Initialize plugin system
