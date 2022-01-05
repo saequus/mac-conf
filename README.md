@@ -1,9 +1,11 @@
 # Mac-conf
 
-MacOS Terminal Configuration for Developers
+### MacOS Terminal Configuration for Developers
 
 
-![Screenshot of the NvChad NeoVim](screenshot.png)
+![Screenshot of the Zsh with Jonathan Theme](screens/zsh-jonathan-theme-screenshot.png)
+
+![Screenshot of the NvChad NeoVim](screens/nvchad-sceenshot.png)
 
 ## What it makes
 
@@ -22,7 +24,9 @@ MacOS Terminal Configuration for Developers
    
 2. Install [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh) if not yet installed
 
-3. Copy files to `$HOME` (`~`) folder
+3. Change `USER` in `.zshrc` to your name (`whoami`) 
+
+4. Copy files to `$HOME` (`~`) folder
 
 ~~~ bash
 $ cd ~
