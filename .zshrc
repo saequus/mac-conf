@@ -1,3 +1,6 @@
+# The dummy name "USER" should be replace with the name 
+# of the user you are logged in to your system. 
+
 # export LDFLAGS="-I/usr/local/opt/openssl/include -L/usr/local/opt/openssl/lib"
 
 # Ruby compilers
@@ -11,7 +14,7 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/paul/.oh-my-zsh"
+export ZSH="/Users/USER/.oh-my-zsh"
 
 # Path for compilers ----
 # Path to openssl
@@ -48,28 +51,32 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 ZSH_THEME="jonathan"
 
-
 HIST_STAMPS="yyyy-mm-dd"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 plugins=(git ruby)
 
-# User configuration
-
+###############################################
+# USER CUSTOM CONFIGURATIONS
+# The configurations below might be needed to be changed 
+# if you have a different set of programms.
+###############################################
 export PATH="/opt/homebrew/Cellar:$PATH"
-export PATH="/Users/slavaspetsyian/Library/Python/3.8/bin:$PATH"
-export PATH="/Users/slavaspetsyian/Library/Python/3.7/bin:$PATH"
-export PATH="/Users/slavaspetsyian/Library/Python/3.6/bin:$PATH"
+
+# Python
+export PATH="/Users/USER/Library/Python/3.8/bin:$PATH"
+export PATH="/Users/USER/Library/Python/3.7/bin:$PATH"
+export PATH="/Users/USER/Library/Python/3.6/bin:$PATH"
 
 export PATH="/opt/homebrew/bin/:$PATH"
+
+
 # Java
 export PATH="/usr/bin/java/:$PATH"
 
 # Ruby
 export PATH="/opt/homebrew/lib/ruby/gems/3.0.0/bin:$PATH"
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
-# export PATH="/usr/bin/ruby:$PATH"
-# export PATH="$HOME/.gem/ruby/2.6.0/bin:$PATH"
 
 export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
