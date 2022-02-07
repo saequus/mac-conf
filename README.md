@@ -32,11 +32,14 @@
 $ cd ~
 $ git clone https://github.com/saequus/mac-conf.git
 $ cd mac-conf
-$ cp -rf mac-conf ~/
 $ make prepare
 ~~~
 
 4. Reload terminal
+~~~ bash
+$ source ~/.zshrc
+# now new styles should be applied to the shell 
+~~~
    
 5. To enable nerd fonts with icons for NeoVim go to 
    * iTerm2 -> 
