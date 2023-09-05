@@ -7,7 +7,7 @@
 
 ![Screenshot of the NvChad NeoVim](screens/nvchad-sceenshot.png)
 
-## What it makes
+## What it does
 
 * [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh) with `Jonathan` theme (example in screenshots)
 * [NvChad edition](https://nvchad.github.io/) NeoVim configuration 
@@ -20,11 +20,11 @@
 
 ## Setting up configuration
 
-1. Install [iTerm2](https://iterm2.com/) if not yet installed
+1. Install [iTerm2](https://iterm2.com/)
    
-2. Install [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh) if not yet installed
+2. Install [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh)
 
-3. Change `USER` in `.zshrc` to your name (`whoami`) 
+3. Change `{USER}` in `.zshrc` to your name (`whoami`) 
 
 4. Copy files to `$HOME` (`~`) folder
 

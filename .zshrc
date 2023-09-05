@@ -1,5 +1,5 @@
-# The dummy name "USER" should be replace with the name 
-# of the user you are logged in to your system. 
+# The dummy name "USER" should be replaced with the name
+# of the user you are logged in to your system.
 
 # export LDFLAGS="-I/usr/local/opt/openssl/include -L/usr/local/opt/openssl/lib"
 
@@ -14,7 +14,7 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/USER/.oh-my-zsh"
+export ZSH="/Users/$USER/.oh-my-zsh"
 
 # Path for compilers ----
 # Path to openssl
@@ -45,6 +45,9 @@ export CPPFLAGS="-I/opt/homebrew/opt/curl/include"
 export CPPFLAGS=-I/usr/local/opt/openssl/include
 # export LDFLAGS=-L/usr/local/opt/openssl/lib
 
+export LDFLAGS="-L/opt/homebrew/opt/openssl@3/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/openssl@3/include"
+
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
@@ -58,18 +61,12 @@ plugins=(git ruby)
 
 ###############################################
 # USER CUSTOM CONFIGURATIONS
-# The configurations below might be needed to be changed 
-# if you have a different set of programms.
+# The configurations below might be needed to be changed
+# if you have a different set of programs.
 ###############################################
-export PATH="/opt/homebrew/Cellar:$PATH"
 
 # Python
-export PATH="/Users/USER/Library/Python/3.8/bin:$PATH"
-export PATH="/Users/USER/Library/Python/3.7/bin:$PATH"
-export PATH="/Users/USER/Library/Python/3.6/bin:$PATH"
-
-export PATH="/opt/homebrew/bin/:$PATH"
-
+export PATH="/Users/$USER/Library/Python/3.10/bin:$PATH"
 
 # Java
 export PATH="/usr/bin/java/:$PATH"
@@ -77,8 +74,6 @@ export PATH="/usr/bin/java/:$PATH"
 # Ruby
 export PATH="/opt/homebrew/lib/ruby/gems/3.0.0/bin:$PATH"
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
-
-export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 export PATH="/usr/local/opt/gettext/bin:$PATH"
 export PATH="/usr/local/opt/openssl/bin:$PATH"
@@ -87,17 +82,28 @@ export PATH="/usr/local/opt:$PATH"
 # Homebrew first
 export PATH="/opt/homebrew/bin:$PATH"
 
-
 source $ZSH/oh-my-zsh.sh
 
 # HOMEBREW
 export HOMEBREW_NO_ANALYTICS=1
-
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 
 # aliases
 alias k='kubectl'
+alias pp='/opt/homebrew/bin/poetry'
 
 export PATH="/opt/homebrew/opt/postgresql@13/bin:$PATH"
-
+export PKG_CONFIG_PATH="/opt/homebrew/opt/openssl@1.1/lib/pkgconfig"
 export PROJ_DIR="/opt/homebrew/Cellar/proj/8.2.0"
+
+# Finish PATH env setup
+export PATH="/opt/homebrew/opt/openssl@3/bin:$PATH"
+export PATH="/opt/homebrew/Cellar/imagemagick/7.1.0-37_1/bin:$PATH"
+export PATH="/opt/homebrew/opt/imagemagick@6/bin:$PATH"
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+
+
+[[ $commands[kubectl] ]] && source <(kubectl completion zsh)

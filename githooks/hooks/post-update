@@ -1,0 +1,7 @@
+#! /usr/local/bin/python3
+from subprocess import check_output
+
+email = check_output(['git', 'config', 'user.email'])
+
+if not email.startswith(b'TO_REPLACE'):
+    raise ValueError("Invalid user in git config")
