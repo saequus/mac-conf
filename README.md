@@ -1,22 +1,30 @@
 # Mac-conf
 
-### MacOS Terminal Configuration for Developers
+MacOS Terminal Configuration for Developers
 
+## Examples
+
+Zsh with Jonathan Theme
 
 ![Screenshot of the Zsh with Jonathan Theme](screens/zsh-jonathan-theme-screenshot.png)
 
+NeoVim with NvChad
+
 ![Screenshot of the NvChad NeoVim](screens/nvchad-sceenshot.png)
 
-## What it does
+## What is it for
 
-* [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh) with `Jonathan` theme (example in screenshots)
-* [NvChad edition](https://nvchad.github.io/) NeoVim configuration 
+* Simplify terminal usage with `iterm2` as main terminal
+* Set up your terminal with [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh) `Jonathan` theme (screenshots in examples)
+* Configure NeoVim with NvChad (screenshots in examples)
+* Add `.github` hooks to use one GitHub account per repository (need to switch manually)  
 
 ## Dependencies
 
 * [XCode](https://developer.apple.com/download/all/) 
 * [iTerm2](https://iterm2.com/) 
 * [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh) 
+* [NvChad](https://nvchad.com/) 
 
 ## Setting up configuration
 
